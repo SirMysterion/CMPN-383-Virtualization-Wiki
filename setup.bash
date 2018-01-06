@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-PORT=1023
+PORT=8888
 COMMAND="wiki"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # get the absolute path to the script file
 RUBY_VERSION=2.3.4    # please keep the version number is the same with the one in install script
@@ -75,7 +75,7 @@ prepare_service_command()  # create wiki.conf file
     cd "$SCRIPT_DIR"
     touch $COMMAND.conf
     echo '#' > $COMMAND.conf
-    echo 'description     "Gollum Wiki for wangwei"' >> $COMMAND.conf
+    echo 'description     "Gollum Wiki"' >> $COMMAND.conf
     echo 'author          "Wei Wang <vizergi@gmail.com>"' >> $COMMAND.conf
     echo 'version      	   "1.0"' >> $COMMAND.conf
     echo 'start on runlevel [2345]' >> $COMMAND.conf
