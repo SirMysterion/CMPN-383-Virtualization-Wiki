@@ -1,12 +1,10 @@
 ## gollum-wiki-template
-This is a lightweight gollum wiki template based on the [template](https://github.com/yuzhangbit/wiki-Barebone). This wiki will be hosted automatically in your local machine when you start the ubuntu after the installation. You can edit the content in markdown and preview the page from the browser directly whenever you want.
+This is a lightweight gollum wiki template based on the [origin-template](https://github.com/yuzhangbit/wiki-Barebone). This wiki will be hosted automatically in your local machine when you start the ubuntu after the installation. You can edit the content in markdown and preview the page from the browser directly whenever you want.
 
 You can build your own wiki from now on.
 
 ## build your own wiki repo
-Note: use “import repository” to make a independent repo as follows to build your own wiki repo:
-
-![import repository](/images/import-repo.png)
+Just fork this repo to your account and clone it to your computer.
 
 ## Install
 
@@ -23,11 +21,20 @@ If you have already installed the dependencies and just want to switch between d
 bash setup.bash
 ```
 
-## Usage
-Open your browser and check the wiki out.
+Then you can get your localhost IP from the feedback:
 ```bash
-localhost:4567
+Created service.bash file
+Created the wiki.conf file.
+Prepare auto start service for the wiki.
+Init folder is already there!
+Start the service!
+Already have the autostart folder.
+wiki start/running, process 5801
+localhost:8888 # here is your localhost IP 8888.
 ```
+
+## Usage
+Open your browser and check the wiki out by **localhost:8888**.
 
 ### Start and Stop wiki
 This wiki will be hosted automatically when you start the ubuntu. You don't need to run commands below.
