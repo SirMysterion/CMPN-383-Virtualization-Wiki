@@ -4,7 +4,11 @@ This is a lightweight gollum wiki template based on the [origin-template](https:
 You can build your own wiki from now on.
 
 ## build your own wiki repo
-Just fork this repo to your account and clone it to your computer.
+Just **fork this repo** to your account and clone it to your computer.
+
+```bash
+git clone git@github.com:Magic-wei/gollum-wiki-template.git && cd gollum-wiki-template
+```
 
 ## Install
 
