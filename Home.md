@@ -1,5 +1,5 @@
 # Server Virtualization (CMPN-383)
-## Wiki Article Creation****
+## Wiki Article Creation
 
 
 * [README](/README)
