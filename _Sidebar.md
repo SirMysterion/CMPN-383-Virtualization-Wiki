@@ -1,6 +1,7 @@
   * [Home](https://wiki.sirmysterion.com/Home)
   * [Azure](https://wiki.sirmysterion.com/azure)
   * [AWS](https://wiki.sirmysterion.com/aws)
+  * [kubernetes](https://wiki.sirmysterion.com/kubernetes)
   * [Installation](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Installation)
   * [Usage](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage)
     * [Tutorial mode](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-Tutorial-mode)
