@@ -1,4 +1,6 @@
-  * [Home](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Home)
+  * [Home](Home)
+  * [Azure](azure)
+  * [AWS](aws)
   * [Installation](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Installation)
   * [Usage](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage)
     * [Tutorial mode](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-Tutorial-mode)
