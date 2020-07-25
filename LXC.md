@@ -19,7 +19,6 @@ Proxmox ships with support for containers and uses LXC as it’s underlying cont
 
 # Sources:
 
-***
 <https://en.wikipedia.org/wiki/LXC>  
 <https://linuxcontainers.org>  
 <https://www.redhat.com/en/blog/history-containers>  
