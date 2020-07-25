@@ -11,13 +11,3 @@
   * [CloudStack](https://wiki.sirmysterion.com/CloudStack)
   * [ProxMox](https://wiki.sirmysterion.com/proxmox)
   * [LXC](https://wiki.sirmysterion.com/LXC)
-
-
-  * [AWS](https://wiki.sirmysterion.com/aws)
-  * [Azure](https://wiki.sirmysterion.com/azure)
-  * [Installation](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Installation)
-  * [Usage](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage)
-    * [Tutorial mode](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-Tutorial-mode)
-    * [Init mode](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-Init-mode)
-    * [Command line modifiers](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-Command-line-modifiers)
-  * [Roadmap](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Roadmap)
