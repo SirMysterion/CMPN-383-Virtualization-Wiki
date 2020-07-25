@@ -10,9 +10,10 @@
     * [Basic Hands-on Lab](https://wiki.sirmysterion.com/kubernetes#4-basic-hands-on-lab)
   * [CloudStack](https://wiki.sirmysterion.com/CloudStack)
   * [ProxMox](https://wiki.sirmysterion.com/proxmox)
+
+
   * [AWS](https://wiki.sirmysterion.com/aws)
   * [Azure](https://wiki.sirmysterion.com/azure)
-
   * [Installation](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Installation)
   * [Usage](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage)
     * [Tutorial mode](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-Tutorial-mode)
