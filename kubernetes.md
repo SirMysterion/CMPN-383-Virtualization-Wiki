@@ -1,4 +1,4 @@
-# Authors: Euisang(Alex) Oh, Rajesh Mandava (Raj)
+By: Euisang(Alex) Oh, Rajesh Mandava (Raj)
 # 1.	Introduction
 
 
