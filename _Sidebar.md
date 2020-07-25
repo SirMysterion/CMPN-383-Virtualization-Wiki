@@ -10,6 +10,7 @@
     * [Basic Hands-on Lab](https://wiki.sirmysterion.com/kubernetes#4-basic-hands-on-lab)
   * [CloudStack](https://wiki.sirmysterion.com/CloudStack)
   * [ProxMox](https://wiki.sirmysterion.com/proxmox)
+  * [LXC](https://wiki.sirmysterion.com/LXC)
 
 
   * [AWS](https://wiki.sirmysterion.com/aws)
