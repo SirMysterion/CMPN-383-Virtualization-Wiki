@@ -16,6 +16,35 @@ LXC containers fall in a category that is in between a Linux chroot environment 
 # Examples of use
 Proxmox ships with support for containers and uses LXC as it’s underlying container technology. LXC containers can be used anywhere a Linux environment is needed but without the additional Full VM overhead. This wiki is currently hosted in an LXC container that was deployed from an Ubuntu 20.04 LTS template and had Nginx and [Gollum](https://github.com/gollum/gollum) installed.
 
+On Debian based systems LXC can bee installed with:
+`sudo apt-get install lxc`
+or
+`sudo snap install lxd`
+
+To get started with LXC, Create your first container with:
+```
+lxc-create -t download -n my-container
+```
+
+You can list running containers with 
+```
+lxc-ls -f
+```
+
+To access the running shell within the container:
+```
+lxc-attach -n my-container
+```
+
+Stopping containers can be done with:
+```
+lxc-stop -n my-container
+```
+
+And removing/deleting a container is done with:
+```
+lxc-destroy -n my-container
+```
 
 # Sources:
 
