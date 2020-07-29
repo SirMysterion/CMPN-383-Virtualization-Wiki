@@ -25,6 +25,7 @@ To get started with LXC, Create your first container with:
 ```
 lxc-create -t download -n my-container
 ```
+the "download" template will show you a list of distributions and versions that are available for download
 
 You can list running containers with 
 ```
