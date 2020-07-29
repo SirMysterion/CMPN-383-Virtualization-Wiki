@@ -11,6 +11,9 @@
 * ## [ProxMox](https://wiki.sirmysterion.com/proxmox)
 * ## [LXC](https://wiki.sirmysterion.com/LXC) 
    * By: Thomas Peters
+* ## [Openshift](https://wiki.sirmysterion.com/Openshift) 
+* ## [Huawei Cloud](https://wiki.sirmysterion.com/HuaweiCloud) 
+* ## [Qemu](https://wiki.sirmysterion.com/qemu) 
 
 ## Wiki Article Creation
 * [github flavored markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

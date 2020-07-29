@@ -17,3 +17,6 @@
     * [How is it used?](https://wiki.sirmysterion.com/LXC#how-it-is-used)
     * [Examples of use](https://wiki.sirmysterion.com/LXC#examples-of-use)
     * [Sources](https://wiki.sirmysterion.com/LXC#sources)
+  * [Openshift](https://wiki.sirmysterion.com/Openshift)
+  * [Huawei Cloud](https://wiki.sirmysterion.com/HuaweiCloud)
+  * [Qemu](https://wiki.sirmysterion.com/qemu)
