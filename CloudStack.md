@@ -22,6 +22,8 @@ The CloudStack environment works by having the management server manage specific
 ### Regions
 A collection of one or more geographically close zones managed by one or more management servers, a Region is the largest available organizational unit (OU) within a CloudStack deployment. Each region is controlled by it's own cluster of management servers (or mangaement server). Regions provide fault tolerance and disaster recovery by segregating resources. Grouping resources into multiple geographic regions provides increased reliability within the cloud. 
 
+![RegImage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/region-overview.png)
+
 ### Zones
 A zone is the second largest OU within CloudStack. A zone typically can be compared to a single datacentre, although it is possible to be running multiple datacentres within a single zone. Each seperate zone contains its own power, network, and is capable of being seperated geographically in order to provide both physical isolation and added redundancy. A zone contains one or more pods as well as one or more pirmary storage servers which are then shared by all the pods within the same zone. A zone also contains secondary storage which is also shared by all pods in the respective zone.
 
@@ -29,20 +31,27 @@ Zones are capable of being public, or private. Public zones are visible to all u
 
 When a new zone is created, the admin will be prompted to configure the zones physical network, create the first pod, cluster, host, primary, and secondary storage. At the created of a zone a VMware datacentre must be specified, and in order to support live migration of hosts within that zone ONLY one VMware datacentre should be used. 
 
+![zoneimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/zone-overview.png)
+
 ### Pods
 A pod is the third largest OU within CloudStack and often relates to a single rack found within a datacentre (Zone). Hosts found within the same pod are also found within the same subnet. Pods are contained within Zones, with each zone being capable of containing multiple different pods, similar to how multiple subnets can be found within a given network. 
 
 Pods consist of one or more clusters of hosts as well as one or more primary servers. Pods are NOT visible to the end user, therefore they are not aware of which pod location they can be found.
+
+![podimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/pod-overview.png)
 
 ### Clusters
 Clusters consist of one or more hosts as well as one or more primary storage servers and are next in terms of size when analyzing a CloudStack environment. Clusters provide a means of easily grouping hosts, with a Cluster commonly being associated with being a KVM Server, Xenserver Server Pool, or VMware Cluster.
 
 Hosts within a given cluster all have identical hardware, run the same hypervisor, use the same primary storage, and are found within the same subnet (since a Pod is one given subnet). By accessing the same storage device, this means that VM instances can be migrated from one host to another within the same cluster without any interuption to services or to that user. Multiple clusters can be deployed into a single pod environment, and even when using 1 singluar host, a cluster is still a mandatory OU.
 
+![clusterimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/cluster-overview.png)
+
 ### Hosts
 Hosts are the smallest OU found within CloudStack and signify a single computer capabale of providing resources that can then run guest Virtual Machines in the CloudStack environment. Each host has it's own hypervisor software installed which is then used to manage whichever guest VM's are created. 
 
 Hosts provide the CPU, memory, storage, and network resources needed to host VM's. Different hosts may have different capacities of these resources, though hosts found within the same cluster MUST be the same. Additional hosts can be added at any given time, with CloudStack being capable of detecting the amount of CPU and Memory provided by the hosts upon creation. Hosts are NOT visible to the end user, therefore the user cannot detect which host their guest VM was created under. 
+
 
 ### Primary Storage
 Primary Storage is commonly associated with a cluster and is known to store the virtual disks for all the VM's that are currently running on hosts within that cluster. Although only 1 primary storage is required, multiple can be configured with any of this storage usually being configured as close to it's hosts as possible to increase performance. 
