@@ -40,5 +40,7 @@ Clusters consist of one or more hosts as well as one or more primary storage ser
 Hosts within a given cluster all have identical hardware, run the same hypervisor, use the same primary storage, and are found within the same subnet (since a Pod is one given subnet). By accessing the same storage device, this means that VM instances can be migrated from one host to another within the same cluster without any interuption to services or to that user. Multiple clusters can be deployed into a single pod environment, and even when using 1 singluar host, a cluster is still a mandatory OU.
 
 ### Hosts
+Hosts are the smallest OU found within CloudStack and signify a single computer capabale of providing resources that can then run guest Virtual Machines in the CloudStack environment. Each host has it's own hypervisor software installed which is then used to manage whichever guest VM's are created. 
 
+Hosts provide the CPU, memory, storage, and network resources needed to host VM's. Different hosts may have different capacities of these resources, though hosts found within the same cluster MUST be the same. Additional hosts can be added at any given time, with CloudStack being capable of detecting the amount of CPU and Memory provided by the hosts upon creation. Hosts are NOT visible to the end user, therefore the user cannot detect which host their guest VM was created under. 
 
