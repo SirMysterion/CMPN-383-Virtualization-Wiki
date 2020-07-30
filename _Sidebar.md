@@ -20,3 +20,4 @@
   * [Openshift](https://wiki.sirmysterion.com/Openshift)
   * [Huawei Cloud](https://wiki.sirmysterion.com/HuaweiCloud)
   * [Qemu](https://wiki.sirmysterion.com/qemu)
+  * [KVM](https://wiki.sirmysterion.com/KVM.md)
