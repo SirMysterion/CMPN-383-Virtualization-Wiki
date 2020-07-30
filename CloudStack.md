@@ -50,3 +50,8 @@ Primary Storage is commonly associated with a cluster and is known to store the 
 Although Primary Storage is often placed within the cluster, this cluser-wide storage also means that the data is only directly available to the VM's found within that cluster. If the data is requested from VM's of a different cluster, the data must first be copied to the target zones secondary storage, then to the requesting clusters primary storage. A solution to this means placing the Primary Storage within the zone to create zone-wide storage, thus avoiding extra data copy operations. This zone-wide storage is not available when using hyper-v however.
 
 ### Secondary Storage
+Secondary storage is used to store Templates of OS images taht can then be used to boot VM's as well as additional configurations for installed applications on VM's. It also contains the ISO images, as well as disk volume snapshots for recovery or creation of new templates. Secondary Storage is available to all hosts within the scope of that storage, and can be used either zone-wide or region-wide.
+
+CloudStack provides plugins that enable both Openstack Object Storage (Swift) as well as Amazon Simple Storage Service (S3). When using either of these plugins, you can then configure that storage for the entire CloudStack environment while using an NFS secondary staging store for each zone. This NFS storage acts as a staging area for which all templates and secondary storage data pass before eventually being handed off to either the Swift or S3 storage. 
+
+Keep in mind that Secondary Storage within a region must be alike. You cannot set up both an S3 server and a Swift server even if they are found within different zones.
