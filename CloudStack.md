@@ -29,3 +29,16 @@ Zones are capable of being public, or private. Public zones are visible to all u
 
 When a new zone is created, the admin will be prompted to configure the zones physical network, create the first pod, cluster, host, primary, and secondary storage. At the created of a zone a VMware datacentre must be specified, and in order to support live migration of hosts within that zone ONLY one VMware datacentre should be used. 
 
+### Pods
+A pod is the third largest OU within CloudStack and often relates to a single rack found within a datacentre (Zone). Hosts found within the same pod are also found within the same subnet. Pods are contained within Zones, with each zone being capable of containing multiple different pods, similar to how multiple subnets can be found within a given network. 
+
+Pods consist of one or more clusters of hosts as well as one or more primary servers. Pods are NOT visible to the end user, therefore they are not aware of which pod location they can be found.
+
+### Clusters
+Clusters consist of one or more hosts as well as one or more primary storage servers and are next in terms of size when analyzing a CloudStack environment. Clusters provide a means of easily grouping hosts, with a Cluster commonly being associated with being a KVM Server, Xenserver Server Pool, or VMware Cluster.
+
+Hosts within a given cluster all have identical hardware, run the same hypervisor, use the same primary storage, and are found within the same subnet (since a Pod is one given subnet). By accessing the same storage device, this means that VM instances can be migrated from one host to another within the same cluster without any interuption to services or to that user. Multiple clusters can be deployed into a single pod environment, and even when using 1 singluar host, a cluster is still a mandatory OU.
+
+### Hosts
+
+
