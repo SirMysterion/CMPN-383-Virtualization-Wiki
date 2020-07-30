@@ -17,7 +17,7 @@ CloudStack can be defined as an open-source cloud computing software for creatin
 ## How does it work?
 CloudStack works by using a Management Server to control many hypervisors from a single management interface. The minimum installation requires 1 machine that must run as the management server, with another machine that acts as the cloud infastructure. First, you must set up the management server, which typically runs on a dedicated physical or virtual machine, then you must specify the resources which are to be managed. This management server then controls the allocation of virtual machines to hosts, and assigns storage and IP addressing as well as other resources to the virtual machines launched within the cloud environment. The management server runs within an Apcache Tomcat container and contains it's own MySQL Database. 
 
-## Management Server resources and CloudStack architecture
+## CloudStack Architecture
 The CloudStack environment works by having the management server manage specific resources, these being:
 ### Regions
 A collection of one or more geographically close zones managed by one or more management servers, a Region is the largest available organizational unit (OU) within a CloudStack deployment. Each region is controlled by it's own cluster of management servers (or mangaement server). Regions provide fault tolerance and disaster recovery by segregating resources. Grouping resources into multiple geographic regions provides increased reliability within the cloud. 
