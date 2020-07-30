@@ -44,3 +44,9 @@ Hosts are the smallest OU found within CloudStack and signify a single computer 
 
 Hosts provide the CPU, memory, storage, and network resources needed to host VM's. Different hosts may have different capacities of these resources, though hosts found within the same cluster MUST be the same. Additional hosts can be added at any given time, with CloudStack being capable of detecting the amount of CPU and Memory provided by the hosts upon creation. Hosts are NOT visible to the end user, therefore the user cannot detect which host their guest VM was created under. 
 
+### Primary Storage
+Primary Storage is commonly associated with a cluster and is known to store the virtual disks for all the VM's that are currently running on hosts within that cluster. Although only 1 primary storage is required, multiple can be configured with any of this storage usually being configured as close to it's hosts as possible to increase performance. 
+
+Although Primary Storage is often placed within the cluster, this cluser-wide storage also means that the data is only directly available to the VM's found within that cluster. If the data is requested from VM's of a different cluster, the data must first be copied to the target zones secondary storage, then to the requesting clusters primary storage. A solution to this means placing the Primary Storage within the zone to create zone-wide storage, thus avoiding extra data copy operations. This zone-wide storage is not available when using hyper-v however.
+
+### Secondary Storage
