@@ -55,3 +55,9 @@ Secondary storage is used to store Templates of OS images taht can then be used 
 CloudStack provides plugins that enable both Openstack Object Storage (Swift) as well as Amazon Simple Storage Service (S3). When using either of these plugins, you can then configure that storage for the entire CloudStack environment while using an NFS secondary staging store for each zone. This NFS storage acts as a staging area for which all templates and secondary storage data pass before eventually being handed off to either the Swift or S3 storage. 
 
 Keep in mind that Secondary Storage within a region must be alike. You cannot set up both an S3 server and a Swift server even if they are found within different zones.
+
+## References
+
+
+
+
