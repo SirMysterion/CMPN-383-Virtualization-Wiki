@@ -57,6 +57,10 @@ CloudStack provides plugins that enable both Openstack Object Storage (Swift) as
 Keep in mind that Secondary Storage within a region must be alike. You cannot set up both an S3 server and a Swift server even if they are found within different zones.
 
 ## References
+[https://en.wikipedia.org/wiki/Apache_CloudStack](https://en.wikipedia.org/wiki/Apache_CloudStack)
+[https://www.8bitmen.com/what-is-apache-cloudstack-everything-you-should-know/](https://www.8bitmen.com/what-is-apache-cloudstack-everything-you-should-know/)
+[http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
+[http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.8/virtual_machines.html](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.8/virtual_machines.html)
 
 
 
