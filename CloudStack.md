@@ -20,5 +20,12 @@ CloudStack works by using a Management Server to control many hypervisors from a
 ## Management Server resources and CloudStack architecture
 The CloudStack environment works by having the management server manage specific resources, these being:
 ### Regions
-A collection of one or more geographically close zones managed by one or more management servers. A Region is the largest available organizational unit (OU) within a CloudStack deployment. Each region is controlled by it's own cluster of management servers (or mangaement server). Regions provide fault tolerance and disaster recovery by segregating resources. Grouping resources into multiple geographic regions provides increased reliability within the cloud. 
+A collection of one or more geographically close zones managed by one or more management servers, a Region is the largest available organizational unit (OU) within a CloudStack deployment. Each region is controlled by it's own cluster of management servers (or mangaement server). Regions provide fault tolerance and disaster recovery by segregating resources. Grouping resources into multiple geographic regions provides increased reliability within the cloud. 
+
+### Zones
+A zone is the second largest OU within CloudStack. A zone typically can be compared to a single datacentre, although it is possible to be running multiple datacentres within a single zone. Each seperate zone contains its own power, network, and is capable of being seperated geographically in order to provide both physical isolation and added redundancy. A zone contains one or more pods as well as one or more pirmary storage servers which are then shared by all the pods within the same zone. A zone also contains secondary storage which is also shared by all pods in the respective zone.
+
+Zones are capable of being public, or private. Public zones are visible to all users, meaning that any user may create a guest within that zone. Private zones however are reserved for a specific domain and only users within that domain or its subdomains may create guests in that zone. Hosts within the same zone are direclty accessible to one another without having to bypass any barriers such as firewalls, hosts in different zones are capable of accessing one another via a VPN tunnel. 
+
+When a new zone is created, the admin will be prompted to configure the zones physical network, create the first pod, cluster, host, primary, and secondary storage. At the created of a zone a VMware datacentre must be specified, and in order to support live migration of hosts within that zone ONLY one VMware datacentre should be used. 
 
