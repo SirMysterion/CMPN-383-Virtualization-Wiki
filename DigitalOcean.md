@@ -23,7 +23,8 @@ Digital Ocean is designed with a number of computers that offer an outstanding f
 
 # Examples of use
 
-Examples
+DigitalOcean started as a simple cloud infrastructure, however since then has grown to be so much more. As of now DigitalOcean offers a variety of services all based off their cloud infrastructures and datacenters, you have options for storage, databases, networking, developer tools any much more. Find below a photo of all of DigitalOceans products that they offer.
+
 
 # _Sources_
 
