@@ -35,7 +35,7 @@ Tools
 * Virtual Machine Manager – Supports creating, editing. Starting, and stopping KVM based virtual machines.
 * OpenORM – Management platform for managing heterogeneous data center
 
-# Installation
+# Installation and Management Tools
 The prerequisites for KVM requires you to verify that you have the hardware virtualization extension.
 
 for Intel extension [vmx]
@@ -57,7 +57,6 @@ The outputs should be kvm_intel or kvm_amd
 
 ![check](https://www.tecmint.com/wp-content/uploads/2015/01/Check-KVM-Kernel-Module.png)
 
-## KVM Installment and Management Tools
 
 ### Management Tools
 **Virt-Manager:** provides a GUI tool
