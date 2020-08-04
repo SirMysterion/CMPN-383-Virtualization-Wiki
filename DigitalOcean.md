@@ -25,8 +25,8 @@ Digital Ocean is designed with a number of computers that offer an outstanding f
 
 Examples
 
-# Sources
+# _Sources_
 
-https://www.cloudways.com/blog/what-is-digital-ocean/#what-is-digitalocean
-https://en.wikipedia.org/wiki/DigitalOcean
+<https://www.cloudways.com/blog/what-is-digital-ocean/#what-is-digitalocean>
+<https://en.wikipedia.org/wiki/DigitalOcean>
 
