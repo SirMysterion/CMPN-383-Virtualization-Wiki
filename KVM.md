@@ -28,7 +28,6 @@ KVM adds a driver (/dev/kvm) that allows Intel and AMD’s hardware virtualizati
 * Disk I/O throttling
 * Automatic NUMA balancing
 * Virtual CPU hot add capability
-* 
 
 ### Tools
 Tools
@@ -36,7 +35,7 @@ Tools
 * Virtual Machine Manager – Supports creating, editing. Starting, and stopping KVM based virtual machines.
 * OpenORM – Management platform for managing heterogeneous data center
 
-# example of use
+# Example of use
 The prerequisites for KVM requires you to verify that you have the hardware virtualization extension.
 
 for Intel extension [vmx]
@@ -49,6 +48,13 @@ for AMD extension [svm]
 grep -e 'svm' /proc/cpuinfo
 ```
 ![AMD](https://www.tecmint.com/wp-content/uploads/2015/01/Check-CPU-Virtualization-Support.png)
+
+Ensure KVM modules are loaded with
+```
+lsmod | grep kvm
+```
+The outputs should be kvm_intel or kvm_amd
+![check](https://www.tecmint.com/wp-content/uploads/2015/01/Check-KVM-Kernel-Module.png)
 
 ## How to create a new Virtual Machine
 
