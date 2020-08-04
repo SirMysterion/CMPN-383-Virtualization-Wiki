@@ -62,8 +62,9 @@ Install KVM package
 ```
 yum install kvm
 ```
-```
-yum install virt-manager libvirt libvirt-python libvirt-client 
-```
 
+### Management Tools
+Virt-Manager provides a GUI tool
+Libvirt provides the server and host side libraries for interacting with hypervisors and host systems
+Virt-client Provides a CL tool
 
