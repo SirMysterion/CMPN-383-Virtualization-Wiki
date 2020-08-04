@@ -3,6 +3,10 @@
 ## What is CloudStack?
 CloudStack can be defined as an open-source cloud computing software for creating, managing, and deploying infastructure cloud services. It is designed to deploy and manage large networks of Virtual Machines, while also being highly available and scalable. The software uses existing popular Hypervisor platforms such as KVM, VMware Vsphere with ESXI and vCentre, and XenServer/XCP. CloudStack is Java based and provides support for it's own API, though also provides support for AWS (Amazon Web Services) and open cloud computing interface via the open grid forum. [1]
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ## History
 
 * The software was originally developed out of Cupertino, California by a company known as VMops created by its founding members Sheng Liang, Shannon Williams, ALex Huang, Will Chan, and Chiradeep Vittal in 2008. VMops raised approximately $17.6 million in funding from Redpoint Ventures, Nexus Ventures, and Index Ventures and eventually changed it's name from VMops to Cloud.com in 2010 upon announcing its product CloudStack.[1]
@@ -11,12 +15,21 @@ CloudStack can be defined as an open-source cloud computing software for creatin
 
 * In October of 2010, Cloud.com announced a parternship with Microsoft that would then develop integration and support for the software with Windows Server 2008 R2 Hypver-V.[1]
 
+
 * In July 2011, Cloud.com was purchased by Citrix Systems for approximately $200 million. The following month Citrix relased what proprietary code was remaining under the Apache Software License. CloudStack 3.0 was released in April 2012 and was donated to the Apache Software Foundation where it was then accepted into the Apache Incubator. At this point Citrix ceased development on the software. 
 * In November of 2012, CloudStack 4.0 was announced and in March 2013 the software became a Top Level Product (Among the list of projects within the Apache Software Foundation development), with the first stable release of CloudStack being released in 4.0.2.[1]
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ## How does it work?
 CloudStack works by using a Management Server to control many hypervisors from a single management interface. The minimum installation requires 1 machine that must run as the management server, with another machine that acts as the cloud infastructure. First, you must set up the management server, which typically runs on a dedicated physical or virtual machine, then you must specify the resources which are to be managed. This management server then controls the allocation of virtual machines to hosts, and assigns storage and IP addressing as well as other resources to the virtual machines launched within the cloud environment. The management server runs within an Apcache Tomcat container and contains it's own MySQL Database.[2],[3] 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## CloudStack Architecture
 The CloudStack environment works by having the management server manage specific resources, these being:
@@ -25,6 +38,10 @@ A collection of one or more geographically close zones managed by one or more ma
 
 ![RegImage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/region-overview.png)
 _Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ### Zones
 A zone is the second largest OU within CloudStack. A zone typically can be compared to a single datacentre, although it is possible to be running multiple datacentres within a single zone. Each seperate zone contains its own power, network, and is capable of being seperated geographically in order to provide both physical isolation and added redundancy. A zone contains one or more pods as well as one or more pirmary storage servers which are then shared by all the pods within the same zone. A zone also contains secondary storage which is also shared by all pods in the respective zone.
@@ -37,6 +54,10 @@ When a new zone is created, the admin will be prompted to configure the zones ph
 
 _Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ### Pods
 A pod is the third largest OU within CloudStack and often relates to a single rack found within a datacentre (Zone). Hosts found within the same pod are also found within the same subnet. Pods are contained within Zones, with each zone being capable of containing multiple different pods, similar to how multiple subnets can be found within a given network. 
 
@@ -45,6 +66,10 @@ Pods consist of one or more clusters of hosts as well as one or more primary ser
 ![podimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/pod-overview.png)
 
 _Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ### Clusters
 Clusters consist of one or more hosts as well as one or more primary storage servers and are next in terms of size when analyzing a CloudStack environment. Clusters provide a means of easily grouping hosts, with a Cluster commonly being associated with being a KVM Server, Xenserver Server Pool, or VMware Cluster.
@@ -55,16 +80,28 @@ Hosts within a given cluster all have identical hardware, run the same hyperviso
 
 _Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ### Hosts
 Hosts are the smallest OU found within CloudStack and signify a single computer capabale of providing resources that can then run guest Virtual Machines in the CloudStack environment. Each host has it's own hypervisor software installed which is then used to manage whichever guest VM's are created. 
 
 Hosts provide the CPU, memory, storage, and network resources needed to host VM's. Different hosts may have different capacities of these resources, though hosts found within the same cluster MUST be the same. Additional hosts can be added at any given time, with CloudStack being capable of detecting the amount of CPU and Memory provided by the hosts upon creation. Hosts are NOT visible to the end user, therefore the user cannot detect which host their guest VM was created under.[3],[4] 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ### Primary Storage
 Primary Storage is commonly associated with a cluster and is known to store the virtual disks for all the VM's that are currently running on hosts within that cluster. Although only 1 primary storage is required, multiple can be configured with any of this storage usually being configured as close to it's hosts as possible to increase performance. 
 
 Although Primary Storage is often placed within the cluster, this cluser-wide storage also means that the data is only directly available to the VM's found within that cluster. If the data is requested from VM's of a different cluster, the data must first be copied to the target zones secondary storage, then to the requesting clusters primary storage. A solution to this means placing the Primary Storage within the zone to create zone-wide storage, thus avoiding extra data copy operations. This zone-wide storage is not available when using hyper-v however.[3],[4]
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ### Secondary Storage
 Secondary storage is used to store Templates of OS images taht can then be used to boot VM's as well as additional configurations for installed applications on VM's. It also contains the ISO images, as well as disk volume snapshots for recovery or creation of new templates. Secondary Storage is available to all hosts within the scope of that storage, and can be used either zone-wide or region-wide.
@@ -73,95 +110,151 @@ CloudStack provides plugins that enable both Openstack Object Storage (Swift) as
 
 Keep in mind that Secondary Storage within a region must be alike. You cannot set up both an S3 server and a Swift server even if they are found within different zones.[3],[4]
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ## Uses
 CloudStack’s toolset is utilized through a single portal and can be used to produce scalable hosted private clouds, hosted public clouds, and on-prem private clouds. The software facilitates the creation of virtual infrastructure into a cloud-based IaaS platform. This is due to the automation of server and infrastructure creation. Instead of having to manually configure the servers, the process becomes much more streamlined. Because of these benefits, CloudStack may be used to reduce time/money spent on server maintenance and upgrades and also offer the ability to pay as you go and scale the infrastructure up or down as needed. Short-term use is also a valid solution and can be implemented in cases such as marketing campaigns or promotions. Once the promotion has ended the service can be terminated or scaled back.[5],[6]
 
 While CloudStack can be granular in its settings if you want it to be, the dashboard breaks down the functions of the software cleanly into a few core tabs: dashboard, instances, affinity groups, storage, network, templates, and more. 
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ## Example of use
 
-* The dashboard is the main tab of the web portal and lists your cloud’s virtual machines, events, private networks, and consumed public IP addresses.
+The dashboard is the main tab of the web portal and lists your cloud’s virtual machines, events, private networks, and consumed public IP addresses.
 
 ![dashboard](https://i.imgur.com/6x0bRXM.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_  
   
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-* One of the most common tasks that anyone will be doing while managing the infrastructure is creating and managing instances. To begin the process of creating the instance, you simply click on the “Instances” tab on the left, and then click on “Add Instance” on the top right corner of the “Instances” page.
+
+One of the most common tasks that anyone will be doing while managing the infrastructure is creating and managing instances. To begin the process of creating the instance, you simply click on the “Instances” tab on the left, and then click on “Add Instance” on the top right corner of the “Instances” page.
 
 ![instances](https://i.imgur.com/6fdMuMq.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* A window will pop up to guide you through the instance creation process. Begin by first selecting  a zone, and then how you want to create the instance. This can be done either through a template or an ISO. 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+A window will pop up to guide you through the instance creation process. Begin by first selecting  a zone, and then how you want to create the instance. This can be done either through a template or an ISO. 
 
 ![createinstance1](https://i.imgur.com/cTSIZUa.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* On the second page a template is selected. A template is essentially a saved and reusable configuration for a virtual machine. This is a great time saver when you are deploying many machines.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+On the second page a template is selected. A template is essentially a saved and reusable configuration for a virtual machine. This is a great time saver when you are deploying many machines.
 
 ![createinstance2](https://i.imgur.com/B2hlGii.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* On the “compute offering” page you will select the necessary specifications and hardware for your purpose. Having an underpowered machine for the desired task will impact performance while an overpowered machine will be a waste of resources. 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+On the “compute offering” page you will select the necessary specifications and hardware for your purpose. Having an underpowered machine for the desired task will impact performance while an overpowered machine will be a waste of resources. 
 
 ![createinstance3](https://i.imgur.com/Yxm5cen.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* Under “disk offerings” you can optionally add another storage device to the virtual machine. When using a template to create the VM a 50 GB drive is automatically installed. 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Under “disk offerings” you can optionally add another storage device to the virtual machine. When using a template to create the VM a 50 GB drive is automatically installed. 
 
 ![createinstance4](https://i.imgur.com/LNyuczy.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* Next, an affinity group can be assigned optionally. An affinity group influences which virtual machines can run on which hosts. This is useful for offering redundancy. If a host fails, a machine running the same services on another host will still be running on an operational host.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Next, an affinity group can be assigned optionally. An affinity group influences which virtual machines can run on which hosts. This is useful for offering redundancy. If a host fails, a machine running the same services on another host will still be running on an operational host.
 
 ![createinstance5](https://i.imgur.com/IoJW7uk.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* When adding the machine to a network you can choose to either add it to a private (isolated) or public (shared) network. The private network will have the added benefit of being behind a firewall.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+When adding the machine to a network you can choose to either add it to a private (isolated) or public (shared) network. The private network will have the added benefit of being behind a firewall.
 
 ![createinstance6](https://i.imgur.com/U3tKrzC.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* The final step will allow you to name the VM and add it to a group, as well as review and edit the configured settings. Finalize the VMs creation by clicking on the “launch machine” option in the bottom right corner.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The final step will allow you to name the VM and add it to a group, as well as review and edit the configured settings. Finalize the VMs creation by clicking on the “launch machine” option in the bottom right corner.
 
 ![createinstance7](https://i.imgur.com/yRs5nfo.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* The machine will be created, and a password will be generated. This password will allow you to log into the machine later. Make sure to save this to a safe location.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The machine will be created, and a password will be generated. This password will allow you to log into the machine later. Make sure to save this to a safe location.
 
 ![instancepassword](https://i.imgur.com/rqmJ3DY.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
-* The machine has machine has been created successfully if you see a “Running” status under “State”.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The machine has machine has been created successfully if you see a “Running” status under “State”.
 
 ![instancecreated](https://i.imgur.com/1DZ5Y6s.png)
 
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)  _
     
   
+  
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 
 
-* Clicking on the VM name will bring you to the details page of the VM. Here you have options for managing your virtual machine.  
+Clicking on the VM name will bring you to the details page of the VM. Here you have options for managing your virtual machine.  
 
-* From left to right the options are stop machine, restart machine, take a VM snapshot, destroy instance, attach ISO, reset password, change service offering (to adjust your machine’s CPU and memory), and console access to the machine.  
+From left to right the options are stop machine, restart machine, take a VM snapshot, destroy instance, attach ISO, reset password, change service offering (to adjust your machine’s CPU and memory), and console access to the machine.  
 
  
 
-* More obviously, you also have the options to view volumes, snapshots, affinity groups, and reset the VM. Resetting the machine bring the machine back to its original state when it was first deployed.
+More obviously, you also have the options to view volumes, snapshots, affinity groups, and reset the VM. Resetting the machine bring the machine back to its original state when it was first deployed.
 
  
 
 ![instancemanagement](https://i.imgur.com/wctuStE.png)
 
+
+
 _Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
