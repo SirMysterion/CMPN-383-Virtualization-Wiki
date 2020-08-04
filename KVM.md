@@ -92,6 +92,6 @@ systemctl enable --now libvirtd
 
 * **name** Assignment of the name for VM
 * **vcpu** Specifies the amount of CPU
-* memory Determine the amount of memory 
-* disk Determine the amount of storage
-* os-variant Configure the VM to a specific Operation System version
+* **memory** Determine the amount of memory in MiB
+* **disk** Determine the amount of storage
+* **os-variant** Configure the VM to a specific Operation System version
