@@ -42,14 +42,18 @@ A pod is the third largest OU within CloudStack and often relates to a single ra
 
 Pods consist of one or more clusters of hosts as well as one or more primary servers. Pods are NOT visible to the end user, therefore they are not aware of which pod location they can be found.[3],[4]
 
-![podimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/pod-overview.png)[4]
+![podimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/pod-overview.png)
+
+Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
 
 ### Clusters
 Clusters consist of one or more hosts as well as one or more primary storage servers and are next in terms of size when analyzing a CloudStack environment. Clusters provide a means of easily grouping hosts, with a Cluster commonly being associated with being a KVM Server, Xenserver Server Pool, or VMware Cluster.
 
 Hosts within a given cluster all have identical hardware, run the same hypervisor, use the same primary storage, and are found within the same subnet (since a Pod is one given subnet). By accessing the same storage device, this means that VM instances can be migrated from one host to another within the same cluster without any interuption to services or to that user. Multiple clusters can be deployed into a single pod environment, and even when using 1 singluar host, a cluster is still a mandatory OU.[3],[4]
 
-![clusterimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/cluster-overview.png)[4]
+![clusterimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/cluster-overview.png)
+
+Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
 
 ### Hosts
 Hosts are the smallest OU found within CloudStack and signify a single computer capabale of providing resources that can then run guest Virtual Machines in the CloudStack environment. Each host has it's own hypervisor software installed which is then used to manage whichever guest VM's are created. 
