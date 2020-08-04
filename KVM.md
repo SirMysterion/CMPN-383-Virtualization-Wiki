@@ -103,15 +103,15 @@ virsh autostart (vm name)
 ```
 Shut down the VM
 ```
-virsh shutdown
+virsh shutdown (vm name)
 ```
 Delete the VM
 ```
-virsh undefine
+virsh undefine (vm name)
 ```
 Edit Machine settings
 ```
-virsh edit
+virsh edit (vm name)
 ```
 
 # Reference
