@@ -31,6 +31,8 @@ Qubes is especially valuable in industries where sensitive data has to be secure
 For a technically savvy end user’s personal use, you can have a Qube for banking online and another for untrusted browsing. If your untrusted browser gets compromised by a malware, your online banking data will not be at risk. Another example is opening attachments on emails where Qubes can open said attachment in its own single-use disposable Qube. This allows the user to do everything on the one physical computer without having to bother about a cyberattacks where a user’s digital life is compromised in one swoop.
 Disposable and or Air Gap VM’s reduce the risk of viewing poisoned websites, malware-laced job applications, suspicious email attachments, PDF’s from untrusted sources, Microsoft Office documents, testing software, not updating software quickly enough and installing malware that pretends to be Flash. 
 
+![https://www.qubes-os.org/attachment/site/qubesosdiagram.png](https://www.qubes-os.org/attachment/site/qubesosdiagram.png)
+
 
  
 *Image used and provided by Qubes OS Official website: https://www.qubes-os.org/intro/
