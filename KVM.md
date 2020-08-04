@@ -19,13 +19,14 @@ KVM adds a driver (/dev/kvm) that allows Intel and AMD’s hardware virtualizati
 ![RegImage](https://i.imgur.com/3XyFTun.png)
 
 ## Features
-Hot plug vCPUs
-Dynamic Memory management
-Live Migration
+
+* Hot plug vCPUs
+* Dynamic Memory management
+* Live Migration
 
 ### Tools
 Tools
-Kimchi – Web-based Virtualization management tool for KVM
-Virtual Machine Manager – Supports creating, editing. Starting, and stopping KVM based virtual machines.
-OpenORM – Management platform for managing heterogeneous data center
+* Kimchi – Web-based Virtualization management tool for KVM
+* Virtual Machine Manager – Supports creating, editing. Starting, and stopping KVM based virtual machines.
+* OpenORM – Management platform for managing heterogeneous data center
 
