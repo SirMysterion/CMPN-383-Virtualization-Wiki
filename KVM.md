@@ -65,7 +65,10 @@ yum install kvm
 
 ### Management Tools
 **Virt-Manager:** provides a GUI tool
+
 **Virt-client:** Provides a CL tool
+
 **Virt-install:** provides the command "virt-install" to create VM from CLI
+
 **Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
 
