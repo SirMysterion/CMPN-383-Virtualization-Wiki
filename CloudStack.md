@@ -81,7 +81,7 @@ While CloudStack can be granular in its settings if you want it to be, the dashb
 ### Example
 
 The dashboard is the main tab of the web portal and lists your cloud’s virtual machines, events, private networks, and consumed public IP addresses. 
-![dashboard](http://imgur.com/6x0bRXM)
+![dashboard](https://imgur.com/6x0bRXM)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
