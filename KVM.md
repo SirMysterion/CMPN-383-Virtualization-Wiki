@@ -59,15 +59,15 @@ The outputs should be kvm_intel or kvm_amd
 
 
 ### Management Tools
-**Virt-Manager:** provides a GUI tool
+* **Virt-Manager:** provides a GUI tool
 
-**Virt-client:** Provides a CL tool
+* **Virt-client:** Provides a CL tool
 
-**Virt-install:** provides the command "virt-install" to create VM from CLI
+* **Virt-install:** provides the command "virt-install" to create VM from CLI
 
-**Virt-viewer*** Display console for Virtual Machines
+* **Virt-viewer*** Display console for Virtual Machines
 
-**Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
+* **Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
 
 Install KVM package  
 ```
@@ -94,3 +94,19 @@ systemctl enable --now libvirtd
 * **memory** Determine the amount of memory in MiB
 * **disk** Determine the amount of storage
 * **os-variant** Configure the VM to a specific Operation System version
+
+### Interaction with Virtual Machine
+Shut down the VM
+```
+virsh shutdown
+```
+delete the VM
+```
+virsh undefine
+```
+Edit Machine settings
+```
+virsh edit
+```
+
+
