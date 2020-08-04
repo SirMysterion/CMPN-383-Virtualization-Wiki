@@ -23,7 +23,8 @@ The CloudStack environment works by having the management server manage specific
 ### Regions
 A collection of one or more geographically close zones managed by one or more management servers, a Region is the largest available organizational unit (OU) within a CloudStack deployment. Each region is controlled by it's own cluster of management servers (or mangaement server). Regions provide fault tolerance and disaster recovery by segregating resources. Grouping resources into multiple geographic regions provides increased reliability within the cloud.[3],[4]
 
-![RegImage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/region-overview.png)[4]
+![RegImage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/region-overview.png)
+Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
 
 ### Zones
 A zone is the second largest OU within CloudStack. A zone typically can be compared to a single datacentre, although it is possible to be running multiple datacentres within a single zone. Each seperate zone contains its own power, network, and is capable of being seperated geographically in order to provide both physical isolation and added redundancy. A zone contains one or more pods as well as one or more pirmary storage servers which are then shared by all the pods within the same zone. A zone also contains secondary storage which is also shared by all pods in the respective zone.
@@ -32,7 +33,9 @@ Zones are capable of being public, or private. Public zones are visible to all u
 
 When a new zone is created, the admin will be prompted to configure the zones physical network, create the first pod, cluster, host, primary, and secondary storage. At the created of a zone a VMware datacentre must be specified, and in order to support live migration of hosts within that zone ONLY one VMware datacentre should be used.[3],[4]
 
-![zoneimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/zone-overview.png)[4]
+![zoneimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/zone-overview.png)
+
+Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
 
 ### Pods
 A pod is the third largest OU within CloudStack and often relates to a single rack found within a datacentre (Zone). Hosts found within the same pod are also found within the same subnet. Pods are contained within Zones, with each zone being capable of containing multiple different pods, similar to how multiple subnets can be found within a given network. 
