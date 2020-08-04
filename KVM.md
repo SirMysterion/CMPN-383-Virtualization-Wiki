@@ -1,4 +1,4 @@
-Calvin C
+Written by: Calvin C
 
 # What is KVM
 KVM, Kernal-based Virtual Machine, is one of the foremost open-source virtualization technologies that are utilized nowadays. IBM and Red Hat, multinational technology companies, use KVM as the premise for their Linux virtualization technologies, and it is most popularly used in the OpenStack cloud as well.
