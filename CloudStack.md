@@ -73,6 +73,18 @@ CloudStack provides plugins that enable both Openstack Object Storage (Swift) as
 
 Keep in mind that Secondary Storage within a region must be alike. You cannot set up both an S3 server and a Swift server even if they are found within different zones.[3],[4]
 
+## Uses
+CloudStack’s toolset is utilized through a single portal and can be used to produce scalable hosted private clouds, hosted public clouds, and on-prem private clouds. The software facilitates the creation of virtual infrastructure into a cloud-based IaaS platform. This is due to the automation of server and infrastructure creation. Instead of having to manually configure the servers, the process becomes much more streamlined. Because of these benefits, CloudStack may be used to reduce time/money spent on server maintenance and upgrades and also offer the ability to pay as you go and scale the infrastructure up or down as needed. Short-term use is also a valid solution and can be implemented in cases such as marketing campaigns or promotions. Once the promotion has ended the service can be terminated or scaled back.[5],[6]
+
+While CloudStack can be granular in its settings if you want it to be, the dashboard breaks down the functions of the software cleanly into a few core tabs: dashboard, instances, affinity groups, storage, network, templates, and more. 
+
+### Example
+
+The dashboard is the main tab of the web portal and lists your cloud’s virtual machines, events, private networks, and consumed public IP addresses. 
+![Dashboard](https://imgur.com/6x0bRXM)
+
+Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+
 ## References
 
 * [1] [https://en.wikipedia.org/wiki/Apache_CloudStack](https://en.wikipedia.org/wiki/Apache_CloudStack)
@@ -82,6 +94,12 @@ Keep in mind that Secondary Storage within a region must be alike. You cannot se
 * [3] [http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
 
 * [4] [http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.8/virtual_machines.html](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.8/virtual_machines.html)
+
+* [5] [https://www.shapeblue.com/about/](https://www.shapeblue.com/about/)
+
+* [6] [https://www.mulesoft.com/resources/cloudhub/iaas-infrastructure-as-a-service#:~:text=IaaS%3A%20Benefits%20and%20use%20cases&text=IaaS%20allows%20cloud%20adopters%20to,drastically%20reducing%20time%20to%20market.](https://www.mulesoft.com/resources/cloudhub/iaas-infrastructure-as-a-service#:~:text=IaaS%3A%20Benefits%20and%20use%20cases&text=IaaS%20allows%20cloud%20adopters%20to,drastically%20reducing%20time%20to%20market.)
+
+* [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
 
