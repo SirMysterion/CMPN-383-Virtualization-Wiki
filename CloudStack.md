@@ -24,7 +24,7 @@ The CloudStack environment works by having the management server manage specific
 A collection of one or more geographically close zones managed by one or more management servers, a Region is the largest available organizational unit (OU) within a CloudStack deployment. Each region is controlled by it's own cluster of management servers (or mangaement server). Regions provide fault tolerance and disaster recovery by segregating resources. Grouping resources into multiple geographic regions provides increased reliability within the cloud.[3],[4]
 
 ![RegImage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/region-overview.png)
-Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
+_Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
 
 ### Zones
 A zone is the second largest OU within CloudStack. A zone typically can be compared to a single datacentre, although it is possible to be running multiple datacentres within a single zone. Each seperate zone contains its own power, network, and is capable of being seperated geographically in order to provide both physical isolation and added redundancy. A zone contains one or more pods as well as one or more pirmary storage servers which are then shared by all the pods within the same zone. A zone also contains secondary storage which is also shared by all pods in the respective zone.
@@ -35,7 +35,7 @@ When a new zone is created, the admin will be prompted to configure the zones ph
 
 ![zoneimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/zone-overview.png)
 
-Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
+_Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
 
 ### Pods
 A pod is the third largest OU within CloudStack and often relates to a single rack found within a datacentre (Zone). Hosts found within the same pod are also found within the same subnet. Pods are contained within Zones, with each zone being capable of containing multiple different pods, similar to how multiple subnets can be found within a given network. 
@@ -44,7 +44,7 @@ Pods consist of one or more clusters of hosts as well as one or more primary ser
 
 ![podimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/pod-overview.png)
 
-Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
+_Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
 
 ### Clusters
 Clusters consist of one or more hosts as well as one or more primary storage servers and are next in terms of size when analyzing a CloudStack environment. Clusters provide a means of easily grouping hosts, with a Cluster commonly being associated with being a KVM Server, Xenserver Server Pool, or VMware Cluster.
@@ -53,7 +53,7 @@ Hosts within a given cluster all have identical hardware, run the same hyperviso
 
 ![clusterimage](http://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/_images/cluster-overview.png)
 
-Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)
+_Image Source: [3] [https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html](https://docs.cloudstack.apache.org/projects/archived-cloudstack-getting-started/en/latest/concepts.html)_
 
 ### Hosts
 Hosts are the smallest OU found within CloudStack and signify a single computer capabale of providing resources that can then run guest Virtual Machines in the CloudStack environment. Each host has it's own hypervisor software installed which is then used to manage whichever guest VM's are created. 
@@ -78,72 +78,84 @@ CloudStack’s toolset is utilized through a single portal and can be used to pr
 
 While CloudStack can be granular in its settings if you want it to be, the dashboard breaks down the functions of the software cleanly into a few core tabs: dashboard, instances, affinity groups, storage, network, templates, and more. 
 
-### Example
+### Example of use
 
 The dashboard is the main tab of the web portal and lists your cloud’s virtual machines, events, private networks, and consumed public IP addresses. 
+
 ![dashboard](https://i.imgur.com/6x0bRXM.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)  
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_  
   
 One of the most common tasks that anyone will be doing while managing the infrastructure is creating and managing instances. To begin the process of creating the instance, you simply click on the “Instances” tab on the left, and then click on “Add Instance” on the top right corner of the “Instances” page.
+
 ![instances](https://i.imgur.com/6fdMuMq.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 A window will pop up to guide you through the instance creation process. Begin by first selecting  a zone, and then how you want to create the instance. This can be done either through a template or an ISO. 
+
 ![createinstance1](https://i.imgur.com/cTSIZUa.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 On the second page a template is selected. A template is essentially a saved and reusable configuration for a virtual machine. This is a great time saver when you are deploying many machines.
+
 ![createinstance2](https://i.imgur.com/B2hlGii.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 On the “compute offering” page you will select the necessary specifications and hardware for your purpose. Having an underpowered machine for the desired task will impact performance while an overpowered machine will be a waste of resources. 
+
 ![createinstance3](https://i.imgur.com/Yxm5cen.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 Under “disk offerings” you can optionally add another storage device to the virtual machine. When using a template to create the VM a 50 GB drive is automatically installed. 
+
 ![createinstance4](https://i.imgur.com/LNyuczy.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 Next, an affinity group can be assigned optionally. An affinity group influences which virtual machines can run on which hosts. This is useful for offering redundancy. If a host fails, a machine running the same services on another host will still be running on an operational host.
+
 ![createinstance5](https://i.imgur.com/IoJW7uk.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 When adding the machine to a network you can choose to either add it to a private (isolated) or public (shared) network. The private network will have the added benefit of being behind a firewall.
+
 ![createinstance6](https://i.imgur.com/U3tKrzC.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 The final step will allow you to name the VM and add it to a group, as well as review and edit the configured settings. Finalize the VMs creation by clicking on the “launch machine” option in the bottom right corner.
+
 ![createinstance7](https://i.imgur.com/yRs5nfo.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 The machine will be created, and a password will be generated. This password will allow you to log into the machine later. Make sure to save this to a safe location.
+
 ![instancepassword](https://i.imgur.com/rqmJ3DY.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 The machine has machine has been created successfully if you see a “running” status under “State”.
+
 ![instancecreated](https://i.imgur.com/1DZ5Y6s.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)  
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)  _
     
   
 Clicking on the VM name will bring you to the details page of the VM. Here you have options for managing your virtual machine.  
 
 From left to right the options are stop machine, restart machine, take a VM snapshot, destroy instance, attach ISO, reset password, change service offering (to adjust your machine’s CPU and memory), and console access to the machine.  
 
-More obviously, you also have the options to view volumes, snapshots, affinity groups, and reset the VM. Resetting the machine bring the machine back to its original state when it was first deployed.  
+More obviously, you also have the options to view volumes, snapshots, affinity groups, and reset the VM. Resetting the machine bring the machine back to its original state when it was first deployed. 
+
 ![instancemanagement](https://i.imgur.com/wctuStE.png)
 
-Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
 
 
 
