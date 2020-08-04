@@ -1,4 +1,4 @@
-Thu Le, Michael R,Joairia C, Duc T. Doan
+Thu Le, Michael R, Joairia C, Duc T. Doan
 
 # Brief History 
 
