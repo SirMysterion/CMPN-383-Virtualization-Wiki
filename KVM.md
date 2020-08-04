@@ -66,7 +66,7 @@ The outputs should be kvm_intel or kvm_amd
 
 * **Virt-install:** provides the command "virt-install" to create VM from CLI
 
-* **Virt-viewer*** Display console for Virtual Machines
+* **Virt-viewer** Display console for Virtual Machines
 
 * **Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
 
@@ -113,6 +113,5 @@ Edit Machine settings
 ```
 virsh edit
 ```
-### Cloning Virtual Machine
 
 
