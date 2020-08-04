@@ -2,7 +2,12 @@ Thu Le, Michael R,Joairia C, Duc T. Doan
 
 # Brief History 
 
-A brief history of DigitalOcean
+DigitalOcean is an American cloud company which provides cloud hosting server provisioning, with a focus on software developers. DigitalOcean was founded by Ben and Moisey Uretsky in June 24th, 2011. The Uretskys had already established a company back in 2003 called Server Stack, which was a managed hosting business. Most companies at the time were only targeting corporate clients who required a cloud infrastructure to manage their servers on a larger scale. They were ambitious to fulfill that gap and create a profitable future for themselves. None of the companies among the competitors were targeting individual software developers and small-scale companies as their potential customers. Due to this Ben and Moisey were ambitious and wanted to get rid of that gap, and wanted to create a new product which would combine the web hosting and virtual servers for the untapped market. After extensive research, Ben and Moisey Uretsky founded DigitalOcean; a company that provides cloud hosting services and server provisioning for individual users and small-scale start-ups making it easy for them to host their websites with one-click solutions.
+
+In 2012 the Uretskys met co-founder Mitch Wainer, following Wainer's response to a Craigslist job listing. The company launched their beta product in January 2012 and became a part of a start-up accelerator program by none other than TechStars. By the end of this start-up accelerator program, the company was able to sign up nearly 400 customers and provided more than 10,000 instances of cloud servers. At the beginning of 2013, it’s among the first few companies to offer SSD-based virtual machines for a seamless experience. On January 16th, 2018, new droplet (virtual machines) plans were introduced on their blog. In May 2018, the company announced the launch of its Kubernetes-based container service.
+
+Right now, the company is under the leadership of the former CEO of Citrix; Mark Templeton, who took over from Ben Uretsky in April 2016.
+
 
 # What is DigitalOcean?
 
