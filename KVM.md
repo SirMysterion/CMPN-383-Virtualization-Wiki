@@ -27,7 +27,7 @@ KVM adds a driver (/dev/kvm) that allows Intel and AMD’s hardware virtualizati
 * **Thin Provisioning:** Allocating only the minimal required amount of space
 * **Disk I/O throttling:** a method to more efficiently handle memory processing
 
-### Tools
+### Useful Tools
 * [Kimchi](https://github.com/kimchi-project/kimchi/) – Web-based Virtualization management tool for KVM
 * [Virtual Machine Manager](https://virt-manager.org/) – Supports creating, editing. Starting, and stopping KVM based virtual machines.
 
@@ -54,7 +54,7 @@ The outputs should be kvm_intel or kvm_amd
 ![check](https://www.tecmint.com/wp-content/uploads/2015/01/Check-KVM-Kernel-Module.png)
 
 
-## Management Tools
+### Management Tools
 * **Virt-Manager:** provides a GUI tool
 
 * **Virt-client:** Provides a CL tool
@@ -85,12 +85,13 @@ systemctl enable --now libvirtd
 --os-variant=debian8
 ```
 
-* **name** Assignment of the name for VM
-* **vcpu** Specifies the amount of CPU
-* **memory** Determine the amount of memory in MiB
-* **disk** Determine the amount of storage
-* **os-variant** Configure the VM to a specific Operation System version
-
+* **name:** Assignment of the name for the Virtual Machine
+* **vcpu:** Specifies the amount of CPU assigned
+* **memory:** Determine the amount of memory in MiB assigned
+* **cdrom:** Location of the OS iso to mount
+* **disk:** Determine the amount of storage assigned
+* **os-variant:** Configure the VM to a specific Operation System version
+* 
 ### Interaction with Virtual Machine
 View all configured Virtual Machine
 ```
