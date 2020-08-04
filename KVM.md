@@ -58,15 +58,39 @@ The outputs should be kvm_intel or kvm_amd
 ![check](https://www.tecmint.com/wp-content/uploads/2015/01/Check-KVM-Kernel-Module.png)
 
 ## KVM Installment and Management Tools
+
+### Management Tools
+**Virt-Manager:** provides a GUI tool
+
+**Virt-client:** Provides a CL tool
+
+**Virt-install:** provides the command "virt-install" to create VM from CLI
+
+**Virt-viewer*** Display console for Virtual Machines
+
+**Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
+
 Install KVM package  
 ```
 yum install qemu-kvm
 ```
 
-### Management Tools
-**Virt-Manager:** provides a GUI tool
-**Virt-client:** Provides a CL tool
-**Virt-install:** provides the command "virt-install" to create VM from CLI
-**Virt-viewer*** Display console for Virtual Machines
-**Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
+Load Libvirtd daemon
+```
+systemctl enable --now libvirtd
+```
 
+### Creating the Virtual Machine
+```
+# virt-install --name=linuxconfig-vm \
+--vcpus=1 \
+--memory=1024 \
+--cdrom=/tmp/debian-9.0.0-amd64-netinst.iso \
+--disk size=5 \
+--os-variant=debian8
+```
+**name:** Assignment of the name for VM
+**vcpu:** Specifies the amount of CPU
+**memory:** Determine the amount of memory 
+**disk:** Determine the amount of storage
+**os-variant:** Configure the VM to a specific Operation System version
