@@ -11,7 +11,12 @@ Right now, the company is under the leadership of the former CEO of Citrix; Mark
 
 # What is DigitalOcean?
 
-DigitalOcean is a provider of VPS, Server hosting with good quality, low price, diverse VPS configurations suitable for all hosting needs, in addition DigitalOcean also provides One-Click Apps, with just one click, you can There is even a VPS installed with WordPress, LAMP Stack, LEMP Stack, ... there are many other App, recently DigitalOcean also let users upload custom operating system files to install.
+
+DigitalOcean is a scalable cloud service provider, that offers cloud services comparable to Azure and AWS. It's main focus since the beginning has been a cloud infrastructure solution built towards software developers since it has a focus on application support and you're able to run your applications parallel across the multiple cloud servers. Anyone looking into cloud solutions would find DigitalOcean as a great contender to other cloud services due to its easy to navigate GUI, incredible prices and the community that surrounds it offering support, tutorials and much more. DigitalOcean has 12 datacenters around the globe which with reduce latency due to ability to scale out to the different regions depending where you are.
+
+
+DigitalOcean is a provider of VPS or "Droplets" using KVM as the hypervisor, it offers high quality server hosting, diverse VPS configurations suitable for all hosting needs. DigitalOcean provides a service called One-Click Apps which is great for growing businesses due to scalability. These One-Click apps allow you to start a Droplet with many features pre-configured, which allows the user to start quickly when working with pre-existing VPS so they don’t have to waste time on configuration or starting fresh. There is a vast amount of VPS offered, installed with features like WordPress, LAMP Stack, LEMP Stack and many more options. Recently DigitalOcean has setup a way for users to upload custom operating system files to install to other users and their company. These VPS that are accessible from DigitalOcean and offer many options which will be discussed in the example portion of this page.
+
 
 # Who owns DigitalOcean?
 
@@ -19,7 +24,7 @@ In 2011, Uretskys founded DigitalOcean, which aims to "provide cloud hosting ser
 
 # How to use DigitalOcean
 
-Digital Ocean is designed with a number of computers that offer an outstanding feature, called a server. By meeting the requirements set by the server, we can create a Virtual Private Server (container). A VPS is a virtual machine, which uses part of the server's resources (CPU, RAM, HDD) and runs a copy of its own operating system and provides user (root) access to the clients of Digital Ocean. This means that each customer has the right to create what they want, which can have a separate container, running the chosen operating system. Customers have administrator access to the VPS, so they can change without fear of conflicts with other users who have the same containers on the same Digital Ocean server. With Digital Ocean, you will have your own server, you have full control, set parameters, select applications and most importantly, you can customize the services accordingly
+Digital Ocean is designed with a number of computers that offer an outstanding feature, called a server. By meeting the requirements set by the server, we can create a Virtual Private Server (container). A VPS is a virtual machine, which uses part of the server's resources (CPU, RAM, HDD) and runs a copy of its own operating system and provides user (root) access to the clients of Digital Ocean. This means that each customer has the right to create what they want, which can have a separate container, running the chosen operating system. Customers have administrator access to the VPS, so they can change without fear of conflicts with other users who have the same containers on the same Digital Ocean server. With Digital Ocean, you will have your own server, you have full control, set parameters, select applications and most importantly, you can customize the services accordingly.
 
 # Examples of use
 
