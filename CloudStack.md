@@ -144,8 +144,9 @@ The machine has machine has been created successfully if you see a “running”
 ![instancecreated](https://i.imgur.com/1DZ5Y6s.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
-
+  
+    
+  
 Clicking on the VM name will bring you to the details page of the VM. Here you have options for managing your virtual machine.  
 
 From left to right the options are stop machine, restart machine, take a VM snapshot, destroy instance, attach ISO, reset password, change service offering (to adjust your machine’s CPU and memory), and console access to the machine.  
