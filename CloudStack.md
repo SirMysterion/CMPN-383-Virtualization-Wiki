@@ -148,7 +148,7 @@ Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.yout
 
 Clicking on the VM name will bring you to the details page of the VM. Here you have options for managing your virtual machine.
 From left to right the options are stop machine, restart machine, take a VM snapshot, destroy instance, attach ISO, reset password, change service offering (to adjust your machine’s CPU and memory), and console access to the machine.
-More obviously, you also have the options to view volumes, snapshots, affinity groups, and reset the VM. Resetting the machine bring the machine back to its original state when it was first deployed.
+More obviously, you also have the options to view volumes, snapshots, affinity groups, and reset the VM. Resetting the machine bring the machine back to its original state when it was first deployed.  
 ![instancemanagement](https://i.imgur.com/wctuStE.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
