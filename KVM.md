@@ -33,10 +33,8 @@ KVM adds a driver (/dev/kvm) that allows Intel and AMD’s hardware virtualizati
 * **Disk I/O throttling:** a method to more efficiently handle memory processing
 
 ### Tools
-Tools
-* Kimchi – Web-based Virtualization management tool for KVM
-* Virtual Machine Manager – Supports creating, editing. Starting, and stopping KVM based virtual machines.
-* OpenORM – Management platform for managing heterogeneous data center
+* [Kimchi](https://github.com/kimchi-project/kimchi/) – Web-based Virtualization management tool for KVM
+* [Virtual Machine Manager](https://virt-manager.org/) – Supports creating, editing. Starting, and stopping KVM based virtual machines.
 
 # Installation and Management Tools
 The prerequisites for KVM requires you to verify that you have the hardware virtualization extension.
