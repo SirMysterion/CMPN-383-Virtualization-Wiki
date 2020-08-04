@@ -1,4 +1,6 @@
-Thu Le, Michael R, Joairia C, Duc T. Doan
+Written By: Thu Le, Michael R, Joairia C, Duc T. Doan
+
+![image](https://images.prismic.io/www-static/e7798719-3af9-42bf-8273-04f02108383f_digitalocean-vpc-blog-1.jpg?auto=compress,format)
 
 # Brief History 
 
@@ -22,13 +24,16 @@ DigitalOcean has many features, all their servers are run on SSD disks, their co
 
 
 
+
 # Who owns DigitalOcean?
 
 In 2011, Uretskys founded DigitalOcean, which aims to "provide cloud hosting services and server provisioning for individual software developers and small scale startups" [1], to help them get closer to the big technologies and bring a Excellent management tool. At the moment, the company is under the leadership of "Yancey Spruill, former CFO and COO of SendGrid (a fellow Techstars company)" [2]. Anyone can use the company's software because "DigitalOcean has 12 data centers allow them to server a significant chunk of global users" [1]. At the same time, they also have a good support community and different rates that each customer has the best option for them. 
 
 # How to use DigitalOcean
 
-Digital Ocean is designed with a number of computers that offer an outstanding feature, called a server. By meeting the requirements set by the server, we can create a Virtual Private Server (container). A VPS is a virtual machine, which uses part of the server's resources (CPU, RAM, HDD) and runs a copy of its own operating system and provides user (root) access to the clients of Digital Ocean. This means that each customer has the right to create what they want, which can have a separate container, running the chosen operating system. Customers have administrator access to the VPS, so they can change without fear of conflicts with other users who have the same containers on the same Digital Ocean server. With Digital Ocean, you will have your own server, you have full control, set parameters, select applications and most importantly, you can customize the services accordingly.
+DigitalOcean has 12 Datacentre’s around the world which all work together on running the DigitalOcean cloud infrastructure. By meeting the requirements set by the server, the user can create a Virtual Private Server (container). A VPS is a virtual machine, which uses part of the server's resources (CPU, RAM, HDD) and runs a copy of its own operating system and provides user (root) access to the clients of DigitalOcean. This means that each customer has the right to create what they want, which can have a separate container, running the chosen operating system. Customers have administrator access to the VPS, so they can change without fear of conflicts with other users who have the same containers on the same Digital Ocean server. If a user is unsure on how to exactly use DigitalOcean, you essentially want to start with purchasing online whatever type of services you need. Once you have bought your service with DigitalOcean you're able to start creating VPS through their services, from there it is up to the user to do what they want. You can run fresh VPS or install preconfigured VPS on your server and use tutorials and lots of other support offered to start building your company with DigitalOcean which is totally scalable if the user wants to add anything to it in the future. With DigitalOcean, you will have your own server, you have full control, you're able to set parameters, select applications and most importantly you can customize the services accordingly. Find below an image showing how one company used DigitalOcean to build their infrastructure. 
+
+![Image](https://images.prismic.io/www-static/9528bc0c-1196-42dc-9d01-92968d0dbeba_content-ignite-digitalocean-infrastructure.png?auto=compress,format)
 
 # Examples of use
 
