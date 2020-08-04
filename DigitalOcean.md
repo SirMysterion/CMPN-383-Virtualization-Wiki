@@ -2,7 +2,7 @@ Thu Le, Michael R,Joairia C, Duc T. Doan
 
 # Brief History 
 
-A brief history of DigitalOce
+A brief history of DigitalOcean
 
 # What is DigitalOcean?
 
@@ -18,4 +18,8 @@ How to use
 
 # Examples of use
 
+Examples
+
 # Sources
+
+Sources
