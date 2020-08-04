@@ -57,5 +57,6 @@ The outputs should be kvm_intel or kvm_amd
 
 ![check](https://www.tecmint.com/wp-content/uploads/2015/01/Check-KVM-Kernel-Module.png)
 
+
 ## How to create a new Virtual Machine
 
