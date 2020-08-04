@@ -84,8 +84,8 @@ The dashboard is the main tab of the web portal and lists your cloud’s virtual
 ![dashboard](https://i.imgur.com/6x0bRXM.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
-
+  
+  
 One of the most common tasks that anyone will be doing while managing the infrastructure is creating and managing instances. To begin the process of creating the instance, you simply click on the “Instances” tab on the left, and then click on “Add Instance” on the top right corner of the “Instances” page.
 ![instances](https://i.imgur.com/6fdMuMq.png)
 
