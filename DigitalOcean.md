@@ -23,7 +23,7 @@ Digital Ocean is designed with a number of computers that offer an outstanding f
 
 # Examples of use
 
-DigitalOcean started as a simple cloud infrastructure, however since then has grown to be so much more. As of now DigitalOcean offers a variety of services all based off their cloud infrastructures and datacenters, these options include Droplets, Kubernetes, Databases and Spaces. To get more in depth of their services that they offer you have the, Droplets and Kubernetes that you would use for computing, your Space Object Storage and Volumes Block Storage for your Spaces, MySQL, PostgreSQL and Redis™ for your Managed Databases, VPC, Cloud Firewalls, Load Balancers, Floating IP’s and DNS for all of your networking needs. 
+DigitalOcean started as a simple cloud infrastructure, however since then has grown to be so much more. As of now DigitalOcean offers a variety of services all based off their cloud infrastructure and datacenters, these options include Droplets, Kubernetes, Databases and Spaces. To get more in depth of their services that they offer you have the, Droplets and Kubernetes that you would use for computing. Space Object Storage and Volumes Block Storage for your Spaces. MySQL, PostgreSQL and Redis™ for your Managed Databases. VPC, Cloud Firewalls, Load Balancers, Floating IP’s and DNS for all of your networking needs. 
 
 With all of these ways you could use DigitalOcean there are so many things that you can do with this product, in fact due to its many uses and great pricing it is a very popular alternative and actually is a strong competitor to Amazon Web Services.
 
