@@ -14,6 +14,18 @@ KVM, a virtualization module, found within the Linux kernel and it allows the ke
 # How it works
 Hypervisors require operating system-level components such as a memory manager, process scheduler, I/O stack, device drivers, security manager, and more to run VMs. KVM converts Linux into a bare-metal hypervisor as it has the ability to access all the components due to being part of the Linux Kernel. 
 
-KVM adds a driver(/dev/kvm) that allows Intel and AMD’s hardware virtualization extensions to communicate with the x86 architecture and exposes the virtualization capabilities to the user. By utilizing the driver, it loads a host kernel module and a processor-specific module, and an emulator to run a virtual machine in its own virtual environment that contains its virtual hard disk, network adapters, and display.
+KVM adds a driver (/dev/kvm) that allows Intel and AMD’s hardware virtualization extensions to communicate with the x86 architecture and exposes the virtualization capabilities to the user. By utilizing the driver, it loads a host kernel module and a processor-specific module, and an emulator to run a virtual machine in its own virtual environment that contains its virtual hard disk, network adapters, and display.
 
 ![RegImage](https://i.imgur.com/3XyFTun.png)
+
+## Features
+Hot plug vCPUs
+Dynamic Memory management
+Live Migration
+
+### Tools
+Tools
+Kimchi – Web-based Virtualization management tool for KVM
+Virtual Machine Manager – Supports creating, editing. Starting, and stopping KVM based virtual machines.
+OpenORM – Management platform for managing heterogeneous data center
+
