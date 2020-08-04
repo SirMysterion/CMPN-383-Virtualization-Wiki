@@ -97,19 +97,19 @@ View all configured Virtual Machine
 ```
 virsh list --all
 ```
-Start VM on boot
+**Start VM on boot**
 ```
 virsh autostart (vm name)
 ```
-Shut down the VM
+**Shut down the VM**
 ```
 virsh shutdown (vm name)
 ```
-Delete the VM
+**Delete the VM**
 ```
 virsh undefine (vm name)
 ```
-Edit Machine settings
+**Edit Machine settings**
 ```
 virsh edit (vm name)
 ```
