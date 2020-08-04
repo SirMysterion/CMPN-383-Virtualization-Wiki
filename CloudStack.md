@@ -229,7 +229,7 @@ The machine has machine has been created successfully if you see a “Running”
 
 ![instancecreated](https://i.imgur.com/1DZ5Y6s.png)
 
-_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)  _
+_Image Source: [7] [Midnetworks - CloudStack 4.3 Demo (YouTube)](https://www.youtube.com/watch?v=WbBTDUMk0w0)_
     
   
   
