@@ -11,7 +11,7 @@ Right now, the company is under the leadership of the former CEO of Citrix; Mark
 
 # What is DigitalOcean?
 
-Description of the product 
+DigitalOcean is a provider of VPS, Server hosting with good quality, low price, diverse VPS configurations suitable for all hosting needs, in addition DigitalOcean also provides One-Click Apps, with just one click, you can There is even a VPS installed with WordPress, LAMP Stack, LEMP Stack, ... there are many other App, recently DigitalOcean also let users upload custom operating system files to install.
 
 # Who owns DigitalOcean?
 
