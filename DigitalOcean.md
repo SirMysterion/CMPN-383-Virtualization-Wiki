@@ -31,10 +31,56 @@ On DigitalOceans website they have many forums discussing tutorials, overviews, 
 
 Some examples of usage of DigitalOcean that can be viewed straight from their website includes:
 
+Using DigitalOcean API:
+(This process is using the API to manage your Droplets. As well make sure to replace the TOKEN variable with your own token)
 
+**Example: List all Droplets**
+
+```
+curl -X GET "https://api.digitalocean.com/v2/actions" \
+	-H "Authorization: Bearer $TOKEN"
+```
+
+**Example: Create a New Droplet**
+
+```
+curl -X POST "https://api.digitalocean.com/v2/droplets" \
+	-d'{"name":"My-Droplet","region":"nyc3","size":"s-1vcpu-1gb","image":"ubuntu-20-04-x64"}' \
+	-H "Authorization: Bearer $TOKEN" \
+	-H "Content-Type: application/json"
+```
+
+A great part of DigitalOcean is that it has so many tools that you're able to do so much with so many options available to the user. Additionally with the API, there are a large amount of various wrappers for the API, these wrappers for example can be used to integrate the API into a script or application. Find below an example of installing a wrapper for the API then creating a new Droplet with it.
+
+**Install the wrapper (make sure to have RubyGems installed):**
+
+`gem install droplet_kit`
+
+**Create a new ruby script:**
+
+`vi create_droplet.rb`
+
+**Creating a new Droplet, with DropletKit (Make sure to your personal access token with write access):**
+
+```
+#!/usr/bin/ruby
+
+require 'droplet_kit'
+token='token'
+client = DropletKit::Client.new(access_token: token)
+
+droplet = DropletKit::Droplet.new(name: 'example.com', region: 'nyc3', size: 's-1vcpu-1gb', image: 'ubuntu-20-04-x64')
+client.droplets.create(droplet)
+```
+
+This API Droplet example does not even scratch the surface of the possibilities of what a user can do or achieve with DigitalOcean. Users can create their entire servers, websites with all the MySQL database/storage needed, many software developers use it for building applications and so much more. DigitalOcean is a great place for small businesses to start because you can use DigitalOcean to scale and run parallel across multiple cloud servers, as the company grows. 
 
 # _Sources_
 
 <https://www.cloudways.com/blog/what-is-digital-ocean/#what-is-digitalocean>
 <https://en.wikipedia.org/wiki/DigitalOcean>
+
+
+
+<https://www.digitalocean.com/docs/apis-clis/api/example-usage/>
 
