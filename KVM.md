@@ -101,6 +101,10 @@ View all configured Virtual Machine
 ```
 virsh list --all
 ```
+Start VM on boot
+```
+virsh autostart (vm name)
+```
 Shut down the VM
 ```
 virsh shutdown
