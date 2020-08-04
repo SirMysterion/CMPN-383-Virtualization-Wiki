@@ -123,4 +123,4 @@ virsh edit (vm name)
 * [Wikipedia: Kernel-based Virtual Machine](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine)
 * [Comparitech: Create Virtual Machine in Linux with KVM](https://www.comparitech.com/net-admin/create-virtual-machine-in-linux-with-kvm/)
 * [Tecmint: Install and Configure KVM in Linux](https://www.tecmint.com/install-and-configure-kvm-in-linux/)
-
+* [TheGeekStuff: How to Install Linux KVM and Create Guest VM](https://www.thegeekstuff.com/2014/10/linux-kvm-create-guest-vm/)
