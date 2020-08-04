@@ -9,7 +9,6 @@ DigitalOcean is an American cloud company which provides cloud hosting server pr
 
 In 2012 the Uretskys met co-founder Mitch Wainer, following Wainer's response to a Craigslist job listing. The company launched their beta product in January 2012 and became a part of a start-up accelerator program by none other than TechStars. By the end of this start-up accelerator program, the company was able to sign up nearly 400 customers and provided more than 10,000 instances of cloud servers. At the beginning of 2013, it’s among the first few companies to offer SSD-based virtual machines for a seamless experience. On January 16th, 2018, new droplet (virtual machines) plans were introduced on their blog. In May 2018, the company announced the launch of its Kubernetes-based container service.
 
-Right now, the company is under the leadership of the former CEO of Citrix; Mark Templeton, who took over from Ben Uretsky in April 2016.
 
 
 # What is DigitalOcean?
@@ -28,7 +27,7 @@ DigitalOcean has many features, all their servers are run on SSD disks, their co
 
 # Who owns DigitalOcean?
 
-In 2011, Uretskys founded DigitalOcean, which aims to "provide cloud hosting services and server provisioning for individual software developers and small scale startups" [1], to help them get closer to the big technologies and bring a Excellent management tool. At the moment, the company is under the leadership of "Yancey Spruill, former CFO and COO of SendGrid (a fellow Techstars company)" [2]. Anyone can use the company's software because "DigitalOcean has 12 data centers allow them to server a significant chunk of global users" [1]. At the same time, they also have a good support community and different rates that each customer has the best option for them. 
+In 2011, Uretskys founded DigitalOcean a private American Cloud infrastructure company, which aims to "provide cloud hosting services and server provisioning for individual software developers and small-scale start-ups" [2], to help them get closer to the big technologies and bring a Excellent management tool. The company was under the leadership of the former CEO of Citrix, Mark Templeton who took over from Ben Uretsky in April 2016 till 2019. However, at this moment, the company is under the leadership of Yancey Spruill, former CFO and COO of SendGrid (a fellow Techstars company)" [3]. Any user around the world has the ability to purchase and use the services provided by DigitalOcean which has a great support community and different rates that each customer may choose whatever the best option for them is. 
 
 # How to use DigitalOcean
 
