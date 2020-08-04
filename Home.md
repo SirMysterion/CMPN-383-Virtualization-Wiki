@@ -9,6 +9,7 @@
 * ## [kubernetes](https://wiki.sirmysterion.com/kubernetes)
    * By: Euisang(Alex) Oh, Rajesh Mandava (Raj)
 * ## [CloudStack](https://wiki.sirmysterion.com/CloudStack)
+   * By: Dan Kibzey, Brennan Wilson
 * ## [ProxMox](https://wiki.sirmysterion.com/proxmox)
 * ## [LXC](https://wiki.sirmysterion.com/LXC) 
    * By: Thomas Peters
