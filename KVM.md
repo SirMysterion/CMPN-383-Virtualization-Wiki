@@ -57,18 +57,16 @@ The outputs should be kvm_intel or kvm_amd
 
 ![check](https://www.tecmint.com/wp-content/uploads/2015/01/Check-KVM-Kernel-Module.png)
 
-## Install KVM and Management Tools
+## KVM Installment and Management Tools
 Install KVM package  
 ```
-yum install kvm
+yum install qemu-kvm
 ```
 
 ### Management Tools
 **Virt-Manager:** provides a GUI tool
-
 **Virt-client:** Provides a CL tool
-
 **Virt-install:** provides the command "virt-install" to create VM from CLI
-
+**Virt-viewer*** Display console for Virtual Machines
 **Libvirt:** provides the server and host side libraries for interacting with hypervisors and host systems
 
