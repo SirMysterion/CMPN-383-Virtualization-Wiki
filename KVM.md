@@ -104,7 +104,7 @@ Shut down the VM
 ```
 virsh shutdown
 ```
-delete the VM
+Delete the VM
 ```
 virsh undefine
 ```
@@ -119,4 +119,7 @@ virsh edit
 * [Linux Mint: KVM - Kernel Based Virtual Machine](https://community.linuxmint.com/tutorial/view/1727)
 * [WikiMili: KVM - Kernel Based Virtual Machine](https://wikimili.com/en/Kernel-based_Virtual_Machine)
 * [InternetNews: Avi Kivity, 'Father' of KVM Virtualization](http://www.internetnews.com/infra/video-avi-kivity-father-of-kvm-virtualization.html)
+* [Wikipedia: Kernel-based Virtual Machine](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine)
+* [Comparitech: Create Virtual Machine in Linux with KVM](https://www.comparitech.com/net-admin/create-virtual-machine-in-linux-with-kvm/)
+* [Tecmint: Install and Configure KVM in Linux](https://www.tecmint.com/install-and-configure-kvm-in-linux/)
 
