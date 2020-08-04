@@ -86,12 +86,10 @@ The dashboard is the main tab of the web portal and lists your cloud’s virtual
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
-
 One of the most common tasks that anyone will be doing while managing the infrastructure is creating and managing instances. To begin the process of creating the instance, you simply click on the “Instances” tab on the left, and then click on “Add Instance” on the top right corner of the “Instances” page.
 ![instances](https://i.imgur.com/6fdMuMq.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
 
 
 A window will pop up to guide you through the instance creation process. Begin by first selecting  a zone, and then how you want to create the instance. This can be done either through a template or an ISO. 
@@ -100,12 +98,10 @@ A window will pop up to guide you through the instance creation process. Begin b
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
-
 On the second page a template is selected. A template is essentially a saved and reusable configuration for a virtual machine. This is a great time saver when you are deploying many machines.
 ![createinstance2](https://i.imgur.com/B2hlGii.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
 
 
 On the “compute offering” page you will select the necessary specifications and hardware for your purpose. Having an underpowered machine for the desired task will impact performance while an overpowered machine will be a waste of resources. 
@@ -114,12 +110,10 @@ On the “compute offering” page you will select the necessary specifications 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
-
 Under “disk offerings” you can optionally add another storage device to the virtual machine. When using a template to create the VM a 50 GB drive is automatically installed. 
 ![createinstance4](https://i.imgur.com/LNyuczy.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
 
 
 Next, an affinity group can be assigned optionally. An affinity group influences which virtual machines can run on which hosts. This is useful for offering redundancy. If a host fails, a machine running the same services on another host will still be running on an operational host.
@@ -128,12 +122,10 @@ Next, an affinity group can be assigned optionally. An affinity group influences
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
-
 When adding the machine to a network you can choose to either add it to a private (isolated) or public (shared) network. The private network will have the added benefit of being behind a firewall.
 ![createinstance6](https://i.imgur.com/U3tKrzC.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
 
 
 The final step will allow you to name the VM and add it to a group, as well as review and edit the configured settings. Finalize the VMs creation by clicking on the “launch machine” option in the bottom right corner.
@@ -142,19 +134,16 @@ The final step will allow you to name the VM and add it to a group, as well as r
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
-
 The machine will be created, and a password will be generated. This password will allow you to log into the machine later. Make sure to save this to a safe location.
 ![instancepassword](https://i.imgur.com/rqmJ3DY.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
 
 
-
 The machine has machine has been created successfully if you see a “running” status under “State”.
 ![instancecreated](https://i.imgur.com/1DZ5Y6s.png)
 
 Image Source: [7] [https://www.youtube.com/watch?v=WbBTDUMk0w0](https://www.youtube.com/watch?v=WbBTDUMk0w0)
-
 
 
 Clicking on the VM name will bring you to the details page of the VM. Here you have options for managing your virtual machine.
