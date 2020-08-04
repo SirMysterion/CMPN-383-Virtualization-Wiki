@@ -89,10 +89,9 @@ systemctl enable --now libvirtd
 --disk size=5 \
 --os-variant=debian8
 ```
-```
-**name:** Assignment of the name for VM
-**vcpu:** Specifies the amount of CPU
-**memory:** Determine the amount of memory 
-**disk:** Determine the amount of storage
-**os-variant:** Configure the VM to a specific Operation System version
-```
+
+* name Assignment of the name for VM
+* vcpu Specifies the amount of CPU
+* memory Determine the amount of memory 
+* disk Determine the amount of storage
+* os-variant Configure the VM to a specific Operation System version
