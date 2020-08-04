@@ -3,6 +3,7 @@
 
 * ## [Google Cloud](https://wiki.sirmysterion.com/GoogleCloud) 
 * ## [DigitalOcean](https://wiki.sirmysterion.com/DigitalOcean)
+    * By: Thu Le, Michael R,Joairia C, Duc T. Doan
 * ## [Qubes OS](https://wiki.sirmysterion.com/QubesOS)
 * ## [VirtualBox](https://wiki.sirmysterion.com/VirtualBox)
 * ## [kubernetes](https://wiki.sirmysterion.com/kubernetes)
