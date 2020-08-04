@@ -11,11 +11,6 @@ KVM, a virtualization module, found within the Linux kernel and it allows the ke
 
 * KVM emerged in 2006 and merged into the Linux kernel mainline in kernel version 2.6.20 on February 5, 2007.
 
-Current owner:
-Name: Paolo Bonzini
-Email: pbonzini@redhat.com 
-
-
 # How it works
 Hypervisors require operating system-level components such as a memory manager, process scheduler, I/O stack, device drivers, security manager, and more to run VMs. KVM converts Linux into a bare-metal hypervisor as it has the ability to access all the components due to being part of the Linux Kernel. 
 
@@ -118,4 +113,10 @@ Edit Machine settings
 virsh edit
 ```
 
+# Reference
+
+* [Red Hat: What is KVM?](https://www.redhat.com/en/topics/virtualization/what-is-KVM)
+* [Linux Mint: KVM - Kernel Based Virtual Machine](https://community.linuxmint.com/tutorial/view/1727)
+* [WikiMili: KVM - Kernel Based Virtual Machine](https://wikimili.com/en/Kernel-based_Virtual_Machine)
+* [InternetNews: Avi Kivity, 'Father' of KVM Virtualization](http://www.internetnews.com/infra/video-avi-kivity-father-of-kvm-virtualization.html)
 
