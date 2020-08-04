@@ -90,7 +90,12 @@ droplet = DropletKit::Droplet.new(name: 'example.com', region: 'nyc3', size: 's-
 client.droplets.create(droplet)
 ```
 
-This API Droplet example does not even scratch the surface of the possibilities of what a user can do or achieve with DigitalOcean. Users can create their entire servers, websites with all the MySQL database/storage needed, many software developers use it for building applications and so much more. DigitalOcean is a great place for small businesses to start because you can use DigitalOcean to scale and run parallel across multiple cloud servers, as the company grows. 
+This API Droplet example does not even scratch the surface of the possibilities of what a user can do or achieve with DigitalOcean. Users can create their entire servers, websites with all the MySQL database/storage needed, many software developers use it for building applications and so much more. DigitalOcean is a great place for small businesses to start because you can use DigitalOcean to scale and run parallel across multiple cloud servers, as the company grows.
+
+**Here is a final example of how with DigitalOceans you can create floating IP's for your server:**
+
+![Image](https://www.digitalocean.com/docs/images/floating-ips/ha-diagram-animated.76f7de975b2ca13263d081bbcd1b01b5915b400b40cb2c5348289701daf59fdb.gif)
+[[6] Image Source](https://www.digitalocean.com/docs/networking/floating-ips/)
 
 # _Sources_
 
