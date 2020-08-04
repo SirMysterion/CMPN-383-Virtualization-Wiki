@@ -8,9 +8,14 @@ A brief history of DigitalOce
 
 Description of the product 
 
-## Who owns DigitalOcean?
+# Who owns DigitalOcean?
+
+Discussing who owns it 
 
 # How to use DigitalOcean
 
+How to use 
 
+# Examples of use
 
+# Sources
