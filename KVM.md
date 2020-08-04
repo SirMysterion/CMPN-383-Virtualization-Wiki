@@ -11,6 +11,11 @@ KVM, a virtualization module, found within the Linux kernel and it allows the ke
 
 * KVM emerged in 2006 and merged into the Linux kernel mainline in kernel version 2.6.20 on February 5, 2007.
 
+Current owner:
+Name: Paolo Bonzini
+Email: pbonzini@redhat.com 
+
+
 # How it works
 Hypervisors require operating system-level components such as a memory manager, process scheduler, I/O stack, device drivers, security manager, and more to run VMs. KVM converts Linux into a bare-metal hypervisor as it has the ability to access all the components due to being part of the Linux Kernel. 
 
@@ -20,14 +25,12 @@ KVM adds a driver (/dev/kvm) that allows Intel and AMD’s hardware virtualizati
 
 ## Features
 
-* Hot plug vCPUs
-* Dynamic Memory management
-* Live Migration
-* Over-committing
-* Thin Provisioning
-* Disk I/O throttling
-* Automatic NUMA balancing
-* Virtual CPU hot add capability
+* Hot plug vCPUs: The ability to add/remove cpu without affecting the virtual Machine state
+* Dynamic Memory management: KSM(Kernel Samepage Merging) is optimized to improve memory management for the cost of cpu power
+* Live Migration: Allows the transportation of a VM without losing downtime
+* Over-committing: Allocating more virtual CPU or memory than the available resource on the system to save money and power
+* Thin Provisioning: Allocating only the minimal required amount of space
+* Disk I/O throttling: a method to more efficiently handle memory processing
 
 ### Tools
 Tools
@@ -96,6 +99,10 @@ systemctl enable --now libvirtd
 * **os-variant** Configure the VM to a specific Operation System version
 
 ### Interaction with Virtual Machine
+View all configured Virtual Machine
+```
+virsh list --all
+```
 Shut down the VM
 ```
 virsh shutdown
@@ -108,5 +115,6 @@ Edit Machine settings
 ```
 virsh edit
 ```
+### Cloning Virtual Machine
 
 
